@@ -122,9 +122,9 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
-                        	<div class="form-top">
+                        	<div style="margin-top: 60px;" class="form-top">
                         		<div class="form-top-left">
-                        			<h3 style="text-align: center; margin-left: 95px; margin-bottom:-15px; font-weight: 400;">LOG IN TO THE GREATNESS</h3>
+                        			<h3 style="text-align: center; margin-left: 95px; margin-bottom:-15px; font-weight: 400;">Liked The Workshop?<br /> <strong> Send Us A FeedBack </strong> :)</h3>
                             		<!-- <p>Enter your username and password to log on:</p> -->
                         		</div>
                         		<!-- <div class="form-top-right">
@@ -136,18 +136,23 @@
                             <div role="form" class="login-form">
 
                               <form role="form" action="/userCheck" method="post" class="login-form">
+                                <div class="form-group">
+                                   <label class="sr-only" for="username">Name</label>
+                                  <input type="text" name="name" placeholder="Your Name..." class="form-username form-control" id="form-username" required>
+                                </div>
                               <div class="form-group">
-                                 <label class="sr-only" for="username">Email</label>
-                                <input type="text" name="username" placeholder="Your Email..." class="form-username form-control" id="form-username" required>
+                                 <label class="sr-only" for="email">Email</label>
+                                <input type="text" name="email" placeholder="Your Email..." class="form-username form-control" id="form-username" required>
                               </div>
                               <div class="form-group">
-			                    		   <label class="sr-only" for="password">Password</label>
-			                        	<input type="password" name="password" placeholder="Password..." class="form-username form-control" id="form-username" required>
+			                    		   <label class="sr-only" for="feedback">Feedback</label>
+			                        	<textarea rows="6" type="text" name="feedback" placeholder="Your Valueable Feedback..." class="form-username form-control" id="form-username" required>
+                                </textarea>
 			                        </div>
 			                        <button type="submit" class="btn" style="font-weight: 500;">SUBMIT DETAILS</button>
 			                    </form>
 
-                          
+
 			                        <!-- <a href="http://weatherupdates.herokuapp.com/" target="_blank"><button style="width: 100%; font-weight: 500;" class="btn" >ENTER AS A GUEST</button></a>
                               <br />
                               <br />
