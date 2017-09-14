@@ -1,0 +1,25 @@
+{
+  "name": "adg-eventflow-unidev",
+  "version": "1.0.0",
+  "description": "ADG-EventFlow\r -------------\r Portal For Event Flow Of Unidev.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadhavBahlMD/ADG-UNIDEV-EventFlow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadhavBahlMD/ADG-UNIDEV-EventFlow/issues"
+  },
+  "homepage": "https://github.com/MadhavBahlMD/ADG-UNIDEV-EventFlow#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "hbs": "^4.0.1",
+    "nodemailer": "^4.1.0"
+  }
+}
