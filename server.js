@@ -25,8 +25,10 @@ app.post('/sendFeedback',(req,res) => {
   mailer.sendMail(userInfo,(err,info) => {
     if(err){
       console.log('Unable to send mail',err);
+      res.status(400).send('<h1> Please enter the correct mailing address!!');
     } else{
-      res.redirect('http://adgvit.com/');
+      // res.redirect('http://adgvit.com/');
+      res.status(200).send('Feedback Sent');
     }
   });
   console.log(userInfo);
