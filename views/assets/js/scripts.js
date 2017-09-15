@@ -32,5 +32,12 @@ jQuery(document).ready(function() {
 
     });
 
-
+    function addGlow(checkId,checkmain) {
+      console.log(checkId);
+      // console.log("\'" + checkId.toString() + "\'");
+      // document.getElementById("\'" + checkId.toString() + "\'").checked = true;
+      // console.log('Checked');
+      if(checkmain.checked == true) checkId.checked = true;
+      else checkId.checked = false;
+    }
 });
