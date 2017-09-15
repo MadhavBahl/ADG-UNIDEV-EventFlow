@@ -28,7 +28,9 @@ app.post('/sendFeedback',(req,res) => {
       res.status(400).send('<h1> Please enter the correct mailing address!!');
     } else{
       // res.redirect('http://adgvit.com/');
-      res.status(200).send('Feedback Sent');
+      res.status(200).render('sendFeedback.hbs',{
+        name: userInfo.name
+      });
     }
   });
   console.log(userInfo);
