@@ -8,8 +8,8 @@ jQuery(document).ready(function() {
                     "assets/img/backgrounds/2.jpg"
 	              , "assets/img/backgrounds/3.jpg"
 	              , "assets/img/backgrounds/1.jpg"
-								, "assets/img/backgrounds/4.jpg"
-							], {duration: 2000, fade: 650});
+								, "assets/img/backgrounds/4.JPG"
+							], {duration: 1500, fade: 650});
 
     /*
         Form validation

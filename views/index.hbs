@@ -68,7 +68,7 @@
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <input id="check1" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check1main" type="checkbox" class="dot">
+                        <h3><input id="check1main" onclick="addGlow(check1,check1main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               New Project. Choose 3D
@@ -89,7 +89,7 @@
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <input id="check3" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check3main" type="checkbox" class="dot">
+                        <h3><input id="check3main" onclick="addGlow(check3,check3main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Import Vuforiaunity package.
@@ -97,9 +97,19 @@
                           </span>
                         </h3>
                       </div>
+                      <!-- <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <input id="check4"  style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check4main" onclick="addGlow(check4,check4main)" type="checkbox" class="dot">
+                          <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
+                            <b style="color: rgb(234,234,244);">
+                              Get Direction light from Game Object.
+                            </b>
+                          </span>
+                        </h3>
+                      </div> -->
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="checkCHU" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="checkCHUmain" onclick="addGlow(checkCHU,checkCHUmain)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Get Direction light from Game Object.
@@ -107,10 +117,9 @@
                           </span>
                         </h3>
                       </div>
-
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <input id="check5" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check5main" type="checkbox" class="dot">
+                        <h3><input id="check5main" onclick="addGlow(check5,check5main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Click Vuforia folder in assets(bottom panel).
@@ -120,8 +129,8 @@
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check6" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check6main" onclick="addGlow(check6,check6main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Go to Prefabs.
@@ -131,8 +140,8 @@
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check7" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check7main" onclick="addGlow(check7,check7main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Select AR camera and drag it to left panel below Direction light.
@@ -142,8 +151,8 @@
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check8" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check8main" onclick="addGlow(check8,check8main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Drag Image Target to below AR Camera.
@@ -153,8 +162,8 @@
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check10" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check10main" onclick="addGlow(check10,check10main)" type="checkbox" class="dot">
                           <span style=" text-align: justify; text-justify: inter-word; padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style=" color: rgb(234,234,244);">
                               Open Vuforia Developer portal.
@@ -167,8 +176,8 @@
 
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check11" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check11main" onclick="addGlow(check11,check11main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(224,224,234);">
                               Click on AR camera (left panel in Unity).
@@ -177,8 +186,8 @@
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check12" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check12main" onclick="addGlow(check12,check12main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(224,224,234);">
                               On right side paste the license key in App license key box.
@@ -187,8 +196,8 @@
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check13" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check13main" onclick="addGlow(check13,check13main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(224,224,234);">
                               Change word center mode to Device tacking.
@@ -197,8 +206,8 @@
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check14" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check14main" onclick="addGlow(check14,check14main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
 Go to target manager in Vuforia portal -> Add database.
@@ -207,8 +216,8 @@ Go to target manager in Vuforia portal -> Add database.
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check15" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check15main" onclick="addGlow(check15,check15main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
 Click on database -> Choose image -> Ok
@@ -217,9 +226,9 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
-                          <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
+                        <input id="check16" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check16main" onclick="addGlow(check16,check16main)" type="checkbox" class="dot">
+                          <span  style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Set Width = 5, tick the box and download package.
                               <br /> <span style="padding-left: 42px;"> Download for Unity.</span>
@@ -228,8 +237,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check17" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check17main" onclick="addGlow(check17,check17main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Import package
@@ -239,8 +248,8 @@ Click on database -> Choose image -> Ok
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check18" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check18main" onclick="addGlow(check18,check18main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Go to AR camera. Load metaverse data
@@ -250,8 +259,8 @@ Click on database -> Choose image -> Ok
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check19" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check19main"  onclick="addGlow(check19,check19main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Activate
@@ -261,8 +270,8 @@ Click on database -> Choose image -> Ok
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check20" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check20main" onclick="addGlow(check20,check20main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               In Image Target Behavior  on Right side, in Database select Image.
@@ -272,8 +281,8 @@ Click on database -> Choose image -> Ok
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check21" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check21main" onclick="addGlow(check21,check21main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Make Image target child of AR Camera.
@@ -283,8 +292,8 @@ Click on database -> Choose image -> Ok
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check22" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check22main" onclick="addGlow(check22,check22main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Go to Asset Store, type Red Samurai.
@@ -294,8 +303,8 @@ Click on database -> Choose image -> Ok
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check23" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check23main" onclick="addGlow(check23,check23main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Click on it and download. Import.
@@ -304,8 +313,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check24" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check24main" onclick="addGlow(check24,check24main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Go to character folder in Assets, drag Samurai to child of Image Target.
@@ -314,8 +323,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check25" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check25main" onclick="addGlow(check25,check25main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Position the samurai to (0,0,0)
@@ -324,8 +333,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check26" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check26main" onclick="addGlow(check26,check26main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Select Animation
@@ -334,8 +343,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check27" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check28main" onclick="addGlow(check28,check28main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Play
@@ -344,8 +353,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check29" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check29main" onclick="addGlow(check29,check29main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Save scene and project.
@@ -355,8 +364,8 @@ Click on database -> Choose image -> Ok
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check40" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check40main" onclick="addGlow(check40,check40main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Go to file, select Build settings, Click on “Add open scenes”.
@@ -365,8 +374,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check41" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check41main" onclick="addGlow(check41,check41main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Select Player settings.
@@ -375,8 +384,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check42" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check42main" onclick="addGlow(check42,check42main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Select android settings(android symbol out of 3 categories)
@@ -385,8 +394,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check43" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check43main" onclick="addGlow(check43,check43main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Scroll down to Identification section.
@@ -395,8 +404,8 @@ Click on database -> Choose image -> Ok
                         </h3>
                       </div>
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check44" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check44main" onclick="addGlow(check44,check44main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                             Now change Build identifier = com.adgvit.yourname
@@ -406,8 +415,8 @@ Click on database -> Choose image -> Ok
                       </div>
 
                       <div id="startEventFlow" class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <input id="check4" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
-                        <h3><input id="check4main" type="checkbox" class="dot">
+                        <input id="check45" style="margin-top: -10px; margin-bottom: -20px; padding-top: 60px; width:10px; margin-left: 8px;" type="checkbox" class="dot" >
+                        <h3><input id="check45main" onclick="addGlow(check45,check45main)" type="checkbox" class="dot">
                           <span style=" padding-left:10px; padding-bottom:10px; font-size:1.40em; ">
                             <b style="color: rgb(234,234,244);">
                               Build and Run.
