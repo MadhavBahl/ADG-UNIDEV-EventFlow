@@ -4,9 +4,11 @@ mainContent.style.display = 'none';
 
 jQuery(document).ready(function() {
 
-    overlay.style.display = 'none';
-    mainContent.style.display = 'block';
-    console.log("LOADER HIDEN");
+    setTimeout(function(){
+      overlay.style.display = 'none';
+      mainContent.style.display = 'block';
+      console.log("LOADER HIDEN");
+    },9000);
 
     /*
         Fullscreen background
