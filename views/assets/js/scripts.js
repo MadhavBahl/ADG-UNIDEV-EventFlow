@@ -1,5 +1,12 @@
+var overlay = document.getElementById("overlay");
+var mainContent = document.getElementById("topContent");
+mainContent.style.display = 'none';
 
 jQuery(document).ready(function() {
+
+    overlay.style.display = 'none';
+    mainContent.style.display = 'block';
+    console.log("LOADER HIDEN");
 
     /*
         Fullscreen background

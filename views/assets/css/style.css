@@ -1,6 +1,20 @@
 /* PORTAL DESIGNED AND DEVELOPED BY MADHAV BAHL */
-body {
-    font-family: 'Roboto', sans-serif;
+
+#overlay{
+    background-image: url('../img/adggif.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*height: auto;*/
+    margin-top: 45vh;
+    min-height: 10vh;
+    /*overflow: hidden;*/
+}
+
+
+.top-content {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: #888;
@@ -137,7 +151,9 @@ img { max-width: 100%; }
 
 
 /***** Top content *****/
-
+.top-content{
+  display: none;
+}
 .inner-bg {
     padding: 100px 0 170px 0;
 }
